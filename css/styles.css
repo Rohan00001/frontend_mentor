@@ -1,0 +1,245 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: hsl(30, 38%, 92%);
+    font-size: 14px;
+}
+
+main{
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.contant{
+    width: 90vw;
+    min-height: 350px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 1rem;
+    max-width: 338px;
+}
+
+
+.product-img-small{
+    width: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.product-img-large{
+    display: none;
+}
+
+.container{
+    padding: 1rem;
+}
+
+
+.product{
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 4px;
+    color: hsl(228, 12%, 48%);
+}
+
+.product-name{
+    font-family: 'Fraunces', serif;
+    color: hsl(212, 21%, 14%);
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin: 0;
+    line-height: 2.5rem;
+}    
+
+
+.description{
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 22px;
+}
+
+.discounted-price{
+    font-family: 'Fraunces', serif;
+    font-size: 2.5rem;
+    color: hsl(158, 36%, 37%);
+    display: inline-block;
+    margin-top: 2rem;
+    margin-bottom: 0;
+}
+.MRP{
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+    display: inline-block;
+    margin-left: 1rem;
+    margin-bottom: 0;
+}
+
+
+.btn{
+    display: inline;
+    margin-top: 1.3rem;
+    width: 100%;
+    padding: 6% 0 5% 0;
+    color: white;
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    border-radius: .5rem;
+    font-size: 14px;
+    font-weight: 700;
+}
+.btn:hover{
+    background-color: hsl(159, 36%, 22%);
+    cursor: pointer;
+}
+
+
+@media (max-width: 352px) {
+    * {
+        font-size: 5px;
+    }
+    .discounted-price {
+        font-size: 1rem;
+    }
+    .container {
+        margin: 10px;
+    }
+    .contant {
+        max-height: 600px;
+    }
+}
+
+@media (min-width: 1440px) {
+
+    main {
+        display: flex;
+        align-items: center;
+    }
+
+    .contant {
+        display: flex;
+        justify-content: center;
+        width: 40vw;
+        min-height: 445px;
+        max-height: 60vh;
+        background-color: white;
+        border-radius: 1rem;
+        max-width: 800px;
+    }
+
+    .container {
+        margin: 0 4% 0 4%;
+        padding: 0 0 4% 0;
+
+    }
+
+    .product {
+        margin: 10% 0 0;
+    }
+
+    .product-img-small {
+        display: none;
+    }
+
+    .product-img-large {
+        display: inline-block;
+        width: 50%;
+        height: auto;
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+    }
+
+    .product-name {
+        font-family: 'Fraunces', serif;
+    color: hsl(212, 21%, 14%);
+        font-size: 2.5rem;
+        line-height: 2.4rem;
+        margin: 9% 0 0;
+    }
+
+    .description {
+        font-size: 18px;
+        margin-top: 10%;
+        line-height: 20px;
+        margin-bottom: 0;
+    }
+
+    .discounted-price {
+        font-size: 2.5rem;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .MRP {
+        font-size: 1rem;
+    }
+
+    .btn {
+        margin-top: 8%;
+        margin-bottom: 20px;
+    }
+
+}
+
+@media (min-width: 1800px) {
+
+    main {
+        display: flex;
+        align-items: center;
+    }
+    
+    body {
+        font-size: 23px;
+    }
+
+    .contant{
+        min-height: 450px;
+    }
+
+    .container {
+        margin: 0 4% 0 4%;
+        padding-bottom: 4%;
+    }
+
+    .product {
+        font-size: 18px;
+        margin: 11% 0 0;
+    }
+
+    .product-name {
+        font-family: 'Fraunces', serif;
+        color: hsl(212, 21%, 14%);
+        font-size: 2rem;
+        line-height: 95%;
+        margin: 7% 0 0;
+    }
+
+    .description {
+        font-size: 20px;
+        line-height: 160%;
+        margin-top: 10%;
+    }
+
+    .discounted-price {
+        font-size: 2rem;
+        margin-top: 0;
+    }
+
+    .MRP {
+        font-size: .8rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+        margin-top: 8%;
+        margin-bottom: 20px;
+    }
+}    
